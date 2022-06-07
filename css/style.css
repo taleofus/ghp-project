@@ -97,71 +97,112 @@
     line-height: 2.5;
     font-family: "BPG Nino Mtavruli", sans-serif;
 }
-.logo-wrapper{
-    display:flex;
-    width:300px;
-    height:270px;
-    justify-content: center;
-    align-items: center;
-    margin:0 auto;
-    margin-top:112px;
 
+.nav-line {
+    margin-left: 530px;
+    margin-top: 0;
 }
-.logo{
-    width:270px;
-    height:270px;
-}
-.info-box-wrapper{
+
+.container {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1300px;
-    width:100%;
-    margin:0 auto;
-    margin-top:160px;
+    justify-content: space-around;
+    margin-left: 70px;
+    margin-top: 250px;
 }
-.info-box{
-    display:flex;
+
+.social {
+    display: flex;
     flex-direction: column;
-    width:582px;
+    gap: 60px;
+}
+
+.logo {
+    margin: auto;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+    margin-top: 24px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.grid-items {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 100px;
+    row-gap: 100px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 250px;
+    
+}
+
+/* grid */
+
+.first-grid-item {
+    width: 600px;
+    height: 450px;
     background: linear-gradient(118.18deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
     border-radius: 50px;
-    align-items: center;
-    justify-content: center;
+    
 }
-.info-box-title{
+
+.second-grid-item {
+    width: 600px;
+    height: 450px;
+    background: linear-gradient(118.18deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+    border-radius: 50px;
+}
+
+.third-grid-item {
+    width: 600px;
+    height: 450px;
+    background: linear-gradient(118.18deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+    border-radius: 50px;
+}
+
+.fourth-grid-item {
+    width: 600px;
+    height: 450px;
+    background: linear-gradient(118.18deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+    border-radius: 50px;
+}
+
+.grid {
     width: 500px;
+    height: 120px;
     font-weight: 400;
     font-size: 40px;
-    line-height: 40px;
-    color:#ffffff;
-    padding-top:70px;
-    text-align: center;
-    font-family: "BPG Nino Mtavruli", sans-serif;
-    text-align: center;
+    color: #FFFFFF;
+    margin: auto;
+    margin-top: 70px;
 }
-.info-box-button{
+
+h3 {
     font-weight: 400;
     font-size: 20px;
-    line-height: 3.5;
+    color: #FFFFFF;
+    margin: 20px 0px 20px 0px;
+}
+
+.about-us, 
+.registration,
+.start,
+.reserv {
+    border: 4px solid #009E95;
+    border-radius: 20px;
+    width: 191px;
+    margin: auto;
+    margin-top: 70px;
     text-align: center;
-    color:#ffffff;
-    margin-top:70px;
-    margin-bottom: 92px;
-    border: 2px solid #009E95;
-    border-radius:20px;
-    width:191px;
-    height:74px;
-    font-family: "BPG Nino Mtavruli", sans-serif;
 }
-.info-box-wrapper :nth-child(1){
-    margin: 0 135px 90px 0;
-}
-.info-box-wrapper :nth-child(2){
-    margin: 0 0 90px 0;
-}
-.info-box-wrapper :nth-child(3){
-    margin: 0 135px 0 0;
-}
+
+/* end grid */
+
+
 .main-footer{
     width:100%;
     height:360px;
@@ -279,6 +320,89 @@
     width:19.44px;
     color: #ffffff;
 }
+
+/* javascript main.html */
+
+.main-scroll-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 300px;
+}
+
+.cover {
+    position: relative;
+    width: 90%;
+    height: 50%;
+}
+
+.cover::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+}
+
+.cover::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+}
+
+.scroll-images {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.child {
+    min-width: 200px;
+    height: 200px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.scroll-images::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.child-img {
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    color: darkslategray;
+    background-color: black;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: chartreuse;
+}
+
+/* end javascript main.html */
+
+
 
 /* about us page */
 .introduce-div{

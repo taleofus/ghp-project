@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/tab-icon.svg">
     <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
     <title>GHP</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="2.jpeg">
 </head>
 <body class="body">
     <div class="div-gradient">
@@ -31,29 +33,87 @@
                 <a href="registration.html"><p class="sign-in">რეგისტრაცია</p></a>
             </div>
         </header>
-        <section1 class="section-1">
-            <div class="logo-wrapper">
-                <img  class="logo" src="img/logo.png" alt="ghp-logo">
+        <hr class="nav-line" width="1220px">
+        
+        <div class="container">
+            <div class="social">
+                <a class="rotate"> Facebook </a>
+                <a class="rotate"> Instagram </a>
+                <a class="rotate"> Youtube </a>
             </div>
-        </section1>
-        <section2 class="info-box-wrapper">
-            <div class="info-box">
-                <h3 class="info-box-title width1" >ჯანდაცვის სერვისი, რომელიც ყველასთვის ხელმისაწვდომია</h3>
-                <a href="aboutus.html"><p class="info-box-button">ჩვენს შესახებ</p></a>
-            </div>   
-            <div class="info-box">
-                <h3 class="info-box-title width2">ონლაინ დაჯავშნისთვის გთხოვთ გაიაროთ რეგისტრაცია</h3>
-                <p class="info-box-button">რეგისტრაცია</p>
-            </div>   
-            <div class="info-box">
-                <h3 class="info-box-title width3">ონლაინ დიაგნოზტიკა სიმპტომების მიხედვით</h3>
-                <a href="diagnostic.html"><p class="info-box-button">დაწყება</p></a>
-            </div>   
-            <div class="info-box">
-                <h3 class="info-box-title width4">ექიმთან ვიზიტის ონლაინ დაჯავშნა</h3>
-                <a href="bookvisit.html"><p class="info-box-button">დაჯავშნა</p></a>
-            </div>   
-        </section2>
+        
+            <img class="logo" src="./img/logo.png" alt="">
+        </div>
+
+        
+        <div class="grid-items">
+            <div class="first-grid-item">
+                <p class="grid">
+                    ჯანდაცვის სერვისი, რომელიც ყველასთვის ხელმისაწვდომია
+                </p>
+                <div class="about-us">
+                    <h3> ჩვენს შესახებ </h3>
+                </div>
+                
+            </div>
+            <div class="second-grid-item">
+                <p class="grid">
+                    ონლაინ დაჯავშნისთვის გთხოვთ გაიაროთ რეგისტრაცია
+                </p>
+                <div class="registration">
+                    <h3> რეგისტრაცია </h3>
+                </div>
+                
+            </div>
+            <div class="third-grid-item">
+                <p class="grid">
+                    ონლაინ დიაგნოზტიკა სიმპტომების მიხედვით
+                </p>
+                <div class="start">
+                    <h3> დაწყება </h3>
+                </div>
+                
+            </div>
+            <div class="fourth-grid-item">
+                <p class="grid">
+                    ექიმთან ვიზიტის ონლაინ დაჯავშნა
+                </p>
+                <div class="reserv"> 
+                    <h3> დაჯავშნა </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-scroll-div">
+            <div>
+                <button class="icon" onclick="scrollr()"> <i class="fas fa-angle-double-left"></i></button>
+            </div>
+            <div class="cover">
+                <div class="scroll-images">
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 1" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 2" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 3" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 4" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 5" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 6" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 7" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 8" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 9" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 10" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 11" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 12" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 13" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 14" alt=""></div>
+                    <div class="child"><img class="child-img" src="./assets/img/კლინიკა 15" alt=""></div>
+                </div>
+            </div>
+            <div>
+                <button class="icon" onclick="scrolll()"> <i class="fas fa-angle-double-right"></i></button>
+            </div>
+        </div>
+
+
+
         <footer class="main-footer">
            <div class="top-footer-wrapper">
             <div>
@@ -110,4 +170,15 @@
     
     
 </body>
+<script>
+    function scrolll() {
+        var left = document.querySelector(".scroll-images");
+        left.scrollBy(350, 0)
+    }
+
+    function scrollr() {
+        var right = document.querySelector(".scroll-images");
+        right.scrollBy(-350, 0)
+    }
+</script>
 </html>
